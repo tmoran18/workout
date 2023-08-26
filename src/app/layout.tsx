@@ -22,9 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link href="/public/icons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
       <link href="/public/icons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
       <meta name="theme-color" content="#24272C" />
-      <body className={inter.className} style={{ background: "black" }}>
-        {children}
-      </body>
+      <body className={inter.className + " bg-background"}>{children}</body>
     </html>
   );
 }
