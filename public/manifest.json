@@ -3,7 +3,7 @@
   "short_name": "Workouts exercise tracker",
   "theme_color": "#FD5D2C",
   "background_color": "#24272C",
-  "display": "fullscreen",
+  "display": "minimal-ui",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
