@@ -22,11 +22,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="keywords" content="Keywords" />
       <title>Workout</title>
 
-      <link rel="manifest" href="/manifest.json" />
-      <link href="/icons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
-      <link href="/icons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
-      <link rel="apple-touch-icon" href="/apple-icon.png"></link>
-      <meta name="theme-color" content="#317EFB" />
+      <link rel="manifest" href="../../public/manifest.json" />
+      <link href="../../public/icons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
+      <link href="../../public/icons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
+      <meta name="theme-color" content="#24272C" />
       <body className={inter.className} style={{ background: "black" }}>
         {children}
       </body>
