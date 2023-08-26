@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-
+import { NavBar } from "@/components/nav-bar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,7 +22,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link href="/icons/icon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
       <link href="/icons/icon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
       <meta name="theme-color" content="#24272C" />
-      <body className={inter.className + " bg-background"}>{children}</body>
+      <body className={inter.className + " bg-background py-6"}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
