@@ -11,7 +11,7 @@ interface LinkItemProps {
 }
 
 const LinkItem: React.FC<LinkItemProps> = ({ href, text, pathname, children }) => (
-  <Link href={href} className="flex flex-col items-center gap-3">
+  <Link href={href} className="flex flex-col items-center gap-2">
     <span className={pathname === href ? "text-white" : "text-neutral-400"}>{text}</span>
     {children}
   </Link>
@@ -21,7 +21,7 @@ export const NavBar = () => {
   const pathname = usePathname();
   return (
     <nav className="bg-foreground fixed left-0 right-0 bottom-0">
-      <section className="flex p-6 justify-between">
+      <section className="flex p-4 justify-between">
         <LinkItem href="/history" text="History" pathname={pathname}>
           <img src="/clock.svg" width={25} height={25} alt="Clock Icon" />
         </LinkItem>
